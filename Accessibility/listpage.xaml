@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Accessibility.listpage"
+              
+             >
+    <Grid RowDefinitions="50,*">
+        <RefreshView Grid.Row="1">
+            <CollectionView x:Name="stringlist" 
+                                         SelectionMode="Single">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+
+                        <SwipeView AutomationProperties.IsInAccessibleTree="True"
+                                   AutomationProperties.Name="delete0">
+                            <SwipeView.RightItems >
+                                <SwipeItems SwipeBehaviorOnInvoked="RemainOpen">
+                                    <SwipeItem Text="d1" AutomationProperties.IsInAccessibleTree="True"
+                                               AutomationProperties.Name="delete1" BackgroundColor="Red"/>
+                                    <SwipeItem Text="d2" AutomationProperties.IsInAccessibleTree="True"
+                                               AutomationProperties.Name="delete2" BackgroundColor="Green"/>
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+                            <Grid>
+                                <Label Text="names" AutomationProperties.IsInAccessibleTree="True" AutomationProperties.Name="name label"
+                                       HorizontalOptions="CenterAndExpand"/>
+                            </Grid>
+
+                            <!--<Grid Padding="0" Margin="0" RowSpacing="0" BackgroundColor="{Binding BackgroundColor}" >
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"></ColumnDefinition>
+                                    <ColumnDefinition Width="10"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="50"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="1"></RowDefinition>
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Column="0"  Grid.Row="0"  Padding="0" Margin="0" RowSpacing="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"></RowDefinition>
+                                        <RowDefinition Height="*"></RowDefinition>
+                                        <RowDefinition Height="*"></RowDefinition>
+                                    </Grid.RowDefinitions>
+
+                                    <Label Grid.Row="0" Text="{Binding Day}"
+                                           
+                                           HorizontalOptions="Center" VerticalOptions="Start"
+                                           FontSize="Medium"
+                                           AutomationProperties.Name="Day"/>
+                                    <Label Grid.Row="1" Text="{Binding Month}"  HorizontalOptions="Center" VerticalOptions="Start" FontSize="Medium"
+                                           
+                                           AutomationProperties.Name="Month"/>
+                                    <Label Grid.Row="2" Text="{Binding Year}"  HorizontalOptions="Center" VerticalOptions="Start" FontSize="Medium"
+                                           
+                                           AutomationProperties.Name="year"/>
+
+                                </Grid>
+
+                                <Grid Grid.Column="1" Margin="0" Padding="0" RowSpacing="0">
+                                    <BoxView WidthRequest="1" BackgroundColor="LightGray" HorizontalOptions="Center" Margin="0" VerticalOptions="FillAndExpand"></BoxView>
+                                    <Image Source="circle_gray.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="20" HeightRequest="20" Margin="0,0,0,0"/>
+                                </Grid>
+
+                                <StackLayout Grid.Column="2" Orientation="Vertical" Padding="10,5,5,10">
+                                    <Label Text="{Binding Name}" FontSize="Small" FontAttributes="Bold" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="Black" Margin="0,0,10,0"
+                                           
+                                           AutomationProperties.Name="cause name"/>
+                                    <Label Text="{Binding EmploymentName}" FontSize="Small" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="Black" Margin="0,0,10,0"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="ic_access_time.png" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" HorizontalOptions="Start"/>
+                                        <Label Text="{Binding Duration}" FontSize="Small" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="Black" Margin="0,0,0,0"/>
+                                    </StackLayout>
+                                    <Label Text="{Binding GetPercentageString}" IsVisible="{Binding IsPercentageVisible}" FontSize="Small" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="Black" Margin="0,0,10,0"/>
+                                    <Label Text="{Binding Comment}" IsVisible="{Binding IsCommentVisible}" LineBreakMode="TailTruncation" FontSize="Small" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="Black" Margin="0,0,10,0"/>
+                                    <Label Text="{Binding ResponseComment}" IsVisible="{Binding IsResponseCommentVisible}" LineBreakMode="TailTruncation" FontSize="Small" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="Black" Margin="0,0,10,0"/>
+                                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                        <Label Text="{Binding Child.ChildName}" IsVisible="{Binding IsChildInfoAvailable}" FontSize="Small" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="Black" Margin="0,0,10,0"/>
+                                        <Label Text="{Binding Child.ChildBirthDate,StringFormat='{}{0:yyyy-MM-dd}'}" IsVisible="{Binding IsChildBirthDateAvailable}" FontSize="Small" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="Black" Margin="0,0,10,0"/>
+                                    </StackLayout>
+                                </StackLayout>
+
+                                <Image Source="{Binding StatusImage}" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="30" Margin="0,0,0,0" HeightRequest="30" Grid.Column="3"/>
+
+                                <BoxView Grid.Row="1"
+                                         Grid.Column="0" 
+                                         Grid.ColumnSpan="4" 
+                                         HeightRequest="1" 
+                                         BackgroundColor="LightGray" 
+                                         VerticalOptions="Center"
+                                         Margin="0,0,0,0"></BoxView>
+
+                            </Grid>-->
+
+                        </SwipeView>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+    </Grid>
+</ContentPage>

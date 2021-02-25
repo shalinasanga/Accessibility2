@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{270E6E7B-3714-4699-B350-E0365FA0B572}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Accessibility.iOS/Info.plist">
+    <Files>
+      <File FileName="Accessibility/listpage.xaml" Line="21" Column="52" />
+      <File FileName="Accessibility/listpage.xaml.cs" />
+      <File FileName="Accessibility/MainPage.xaml" />
+      <File FileName="Accessibility/MainPage.xaml.cs" />
+      <File FileName="Accessibility.iOS/AppDelegate.cs" />
+      <File FileName="Accessibility/App.xaml.cs" />
+      <File FileName="Accessibility.iOS/Main.cs" />
+      <File FileName="Accessibility.iOS/Info.plist" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Accessibility" expanded="True">
+            <Node name="Accessibility" expanded="True" />
+            <Node name="Accessibility.iOS" expanded="True">
+              <Node name="Info.plist" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Accessibility.Android FirstBuild="True" PreferredExecutionTarget="Android.pixel_4_xl_r_11_0_-_api_30" />
+  <MonoDevelop.Ide.ItemProperties.Accessibility.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.983e04522caa36ba2e07d77cd4048ba3108fb43f" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
